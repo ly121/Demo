@@ -1,0 +1,21 @@
+##配置文件
+#server:
+#  port: 8080
+#  #context-path: /girl
+##content: "age: ${age},size: ${size}"
+#girl:
+#  age: 18
+#  size: m
+#creat每次运行服务器都会将原表删除创建一个新的表结构，update不会删除有记录的表格。
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

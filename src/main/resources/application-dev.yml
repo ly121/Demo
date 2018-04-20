@@ -1,0 +1,9 @@
+#配置文件
+server:
+  port: 8080
+  #context-path: /girl
+#content: "age: ${age},size: ${size}"
+girl:
+  age: 18
+  size: l
+
